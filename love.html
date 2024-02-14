@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('./images/hand.jpg'); /* Replace 'background-image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            padding: 100px 0;
+        }
+        h1,h2 {
+            color: #ffffff;
+            font-size: 48px;
+        }
+        h3.ok{color: #ffffff;
+            
+        }
+        p { 
+            font-size: 24px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <audio id="backgroundAudio" src="./audio/sitaaudio.mp3" autoplay loop ></audio> -->
+
+    <button id="audio-control" onclick="toggleAudio()">Ikada click chei ra</button>
+
+
+    <!-- <div class="overlay">
+        <h1>I Love You</h1>
+        <p>Happy Valentine's Day!</p>
+        <a href="memories.html" class="button">Memories</a>
+    </div> -->
+
+    <div>
+        <h2>Nenu ra ne mohan ni
+        </h2>
+        <h3>Inni years yela gadichi poyayoo teledu
+        </h3>
+
+        <p>Life chala fast aipoindi kadha,yenduko teledu netho vunapudu ika fast ga aipotundi time, maybe yekuva istam vundadam valla amo.Netho vunnanani time ki kuda kopam vachi daniki manalni chusi mana kalayikani chudaleka jealous tho fast ga vellipotundi anukunta….manalni dooram cheyadaniki..
+        </p>
+
+        <p>
+            Nijanga nuv ante naku chala istam yenduko chpana …nuvu na geeta kabatti na danivi kabatti naku possesiveness.. prema… rendu yekkuve ra..
+            </p>
+
+            <p>Manam share cheskunna moments yepatiki marchipolenivi,yepatiki nenu nethone vundali.. vuntanu kuda..</p>
+    </div>
+<div>
+
+    <h3>Happy Valentine's day my Love 💚</h3>
+</div>
+    
+
+    <div>
+        <h1>Thanks for everything</h1>
+    </div>
+
+    <div>
+        <h2>Love you loads Geeta🖤 ....</h2>
+        <h3 class="ok"></h3>
+    </div>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="./audio/sitaaudio.mp3" type="audio/mp3">  
+        
+    </audio> 
+
+    <a href="firstmeet.html"><button>Firstmeet</button></a>
+    <a href="memories.html"><button>Memories</button></a>
+    
+
+
+    
+
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById("bg-music");
+            var audioButton = document.getElementById("audio-control");
+            if (audio.paused) {
+                audio.play();
+                audioButton.innerHTML = "Mute Music";
+            } else {
+                audio.pause();
+                audioButton.innerHTML = "Play Music";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
